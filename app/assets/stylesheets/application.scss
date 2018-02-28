@@ -9,9 +9,21 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
- *= require_tree .
- *= require_self
  */
-@import "_variables.scss";
-@import "_bootstrap-overrides.scss";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "simple-line-icons";
+
+@import "_bootstrap-overrides";
+@import "_callout";
+@import "_footer";
+@import "_global";
+@import "_masthead";
+
+@import "_mixins";
+@import "_portfolio";
+@import "_services";
+@import "_sidebar";
+@import "_variables";
